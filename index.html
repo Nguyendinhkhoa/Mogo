@@ -4,38 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./vendor/bootstrap-4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-4.5.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./vendor/jquery/jquery-1.12.4.min.js"></script>
-    <script src="./vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <script src="./vendor/bootstrap-4.5.3/js/bootstrap.min.js"></script>
+    <title>Mogo</title>
 </head>
 
 <body>
     <!-- HEADER  -->
-
-    <head id="home">
+    <header id="home">
         <div class="home">
             <div class="mogo-menu">
                 <div class="container-xl">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand">MOGO</a>
+                        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse"
+                            aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
+                        <div id="my-nav" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#">HOME</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">ABOUT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" href="#">SERVICE</a>
+                                    <a class="nav-link" href="#">SERVICE</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">WORK</a>
@@ -50,21 +48,57 @@
                         </div>
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="./images/icon/shopping-cart.png" alt="">
-                                </a>
+                                <a href="" class="nav-link"><img src="./images/icon/shopping-cart.png" alt=""></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="./images/icon/search.png" alt="">
-                                </a>
+                                <a href="" class="nav-link"><img src="./images/icon/search.png" alt=""></a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
+            <div class="home-slide text-center">
+                <div class="container-fluid">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item ">
+                                <h2 class="creative-template">Creative Template</h2>
+                                <h1 class="emphasized-phrase slogan">Welcome1<br>to MoGo</h1>
+                                <hr>
+                                <button type="button">LEARN MORE</button>
+                            </div>
+                            <div class="carousel-item ">
+                                <h2 class="creative-template">Creative Template</h2>
+                                <h1 class="emphasized-phrase slogan">Welcome2<br>to MoGo</h1>
+                                <hr>
+                                <button type="button">LEARN MORE</button>
+                            </div>
+                            <div class="carousel-item ">
+                                <h2 class="creative-template">Creative Template</h2>
+                                <h1 class="emphasized-phrase slogan">Welcome3<br>to MoGo</h1>
+                                <hr>
+                                <button type="button">LEARN MORE</button>
+                            </div>
+                            <div class="carousel-item active">
+                                <h2 class="creative-template">Creative Template</h2>
+                                <h1 class="emphasized-phrase slogan">Welcome<br>to MoGo</h1>
+                                <hr>
+                                <button type="button">LEARN MORE</button>
+                            </div>
+                        </div>
+                        <div class="container-xl">
+                            <div class="row carousel-indicators ">
+                                <div class="col-sm-6 col-md-3" data-target="#home-slide" data-slide-to="0"></div>
+                                <div class="col-sm-6 col-md-3" data-target="#home-slide" data-slide-to="1"></div>
+                                <div class="col-sm-6 col-md-3" data-target="#home-slide" data-slide-to="2"></div>
+                                <div class="col-sm-6 col-md-3" data-target="#home-slide" data-slide-to="3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </head>
+    </header>
 </body>
 
 </html>
